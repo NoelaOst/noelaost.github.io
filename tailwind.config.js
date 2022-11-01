@@ -2,7 +2,24 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'sans': "'Montserrat', serif",
+        'serif': "'Inconsolata', sans-serif",
+        'noto': "'Noto Sans'",
+      },
+      colors:{
+        'dark-gray': 'hsl(0, 0%, 13%)',
+        'light-gray':'#ccc',
+        'soft-pink':'hsl(0, 80%, 86%)',
+        'salmon':'hsl(0, 74%, 74%)',
+        'creme':'hsl(0, 100%, 98%)',
+        'dark-red':'hsl(0, 6%, 24%)',
+      },
+      spacing: {
+        '9px': '9px',
+      },
+    },
   },
   plugins: [],
 }
