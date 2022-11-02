@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'sans': "'Montserrat', serif",
-        'serif': "'Inconsolata', sans-serif",
+        'serif': "'Ogg', sans-serif",
         'noto': "'Noto Sans'",
       },
       colors:{
@@ -18,6 +18,11 @@ module.exports = {
       },
       spacing: {
         '9px': '9px',
+      },
+      rotate: {
+        '20': '20deg',
+        '30': '30deg',
+        '35': '35deg',
       },
     },
   },

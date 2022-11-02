@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noela Oštrić Portfolio</title>
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon-32x32.png" type="image/icon" />
     <link rel="stylesheet" href="public/output.css" />
     <script
       src="https://kit.fontawesome.com/dba0ce8cfd.js"
@@ -12,28 +12,33 @@
     ></script>
     <script src="js/main.js" defer></script>
   </head>
-  <body class="font-noto bg-dark-gray text-light-gray mx-10 md:mx-20">
+  <body
+    class="overflow-x-hidden max-w-screen font-san text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
+  >
     <!-- header -->
     <header>
-      <!-- <div><img src="" alt="" /></div> -->
-      <nav class="main-nav flex flex-row justify-end md:justify-center py-4">
+      <nav class="main-nav flex flex-row justify-end md:justify-center py-6">
         <ul
-          class="nav-list z-10 hidden md:static md:flex md:flex-row md:gap-6 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
+          class="nav-list z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
         >
           <a href="#about">
-            <li class="nav-list-link active:underline md:hover:text-white">
+            <li
+              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
+            >
               About
             </li></a
           >
           <a href="#projects">
-            <li class="nav-list-link active:underline md:hover:text-white">
+            <li
+              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
+            >
               Projects
             </li></a
           >
 
           <a href="#resume">
             <li
-              class="nav-list-link active:underline md:hover:text-white"
+              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
               id="resume"
             >
               Resume
@@ -41,7 +46,7 @@
           >
           <a href="#contact">
             <li
-              class="nav-list-link active:underline md:hover:text-white border-black border-2 p-2 md:border-light-gray"
+              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
             >
               Contact
             </li></a
@@ -49,11 +54,11 @@
         </ul>
         <div class="hamburger md:hidden w-30 h-30 cursor-pointer z-10">
           <span class="line line1"></span>
-          <span class="line line2"></span>
+          <span class="line line2 translate-x-2 -translate-y-1"></span>
           <span class="line line3"></span>
         </div>
       </nav>
-      <div class="hamburger"></div>
+      <div class="gradient-top"></div>
     </header>
     <!-- main -->
     <main>
@@ -71,35 +76,58 @@
         </ul>
       </div>
       <!-- home -->
-      <section class="min-h-screen font-serif" id="home">
-        <div>
-          <h1 class="text-4xl md:text-7xl">Hi, I'm Noela Ostric</h1>
-          <h2 class="text-2xl md:text-5xl">I design and develop websites</h2>
+      <section
+        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full"
+        id="home"
+      >
+        <div class="w-full">
+          <h1 class="text-5xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
+          <h2 class="text-2xl md:text-5xl text-left">
+            I design and develop websites.
+          </h2>
         </div>
-        <div><img src="" alt="" /></div>
+        <div class="w-full flex flex-row justify-center items-center">
+          <!-- <img
+            class="w-1/2 rounded"
+            src="images/Noela Ostric.jpg"
+            alt="photo of Noela Ostric in black & white"
+          /> -->
+        </div>
       </section>
       <!-- about -->
-      <section class="min-h-screen" id="about">
-        <h2>About</h2>
-        <p>
-          Hi! My name is Noela and I am political science graduate who took a
-          drastic career change to frontend development and UI/UX design in
-          2022. I loaded up on online learning before enrolling to Algebra
-          university program to learn additional skills that I couldn't learn as
-          a self-taught designer/developer. On my free time, you can catch me
-          working on new projects and learning more skillsets.
-        </p>
-        <h3>Here are a few technologies I've been working with recently:</h3>
-        <div>HTML5 & CSS3</div>
-        <div>Tailwind CSS</div>
-        <div>Javascript</div>
-        <div>Wordpress</div>
-        <div>Figma</div>
-        <div>Adobe Photoshop</div>
-
-        <h3>I currently learn:</h3>
-        <div>Figma</div>
-        <div>Adobe Illustrator</div>
+      <section
+        class="min-h-screen flex flex-col md:flex-row justify-center items-center basis-full gap-6"
+        id="about"
+      >
+        <div class="about-author w-full">
+          <h2>About</h2>
+          <p>
+            Hi! My name is Noela and I am political science graduate who took a
+            drastic career change to frontend development and UI/UX design in
+            2022. I loaded up on online learning before enrolling to Algebra
+            university program to learn additional skills that I couldn't learn
+            as a self-taught designer/developer. On my free time, you can catch
+            me working on new projects and learning more skillsets.
+          </p>
+        </div>
+        <div class="skills flex flex-col justify-center w-full gap-6">
+          <div class="skills-adopted">
+            <h3>
+              Here are a few technologies I've been working with recently:
+            </h3>
+            <div>HTML5 & CSS3</div>
+            <div>Tailwind CSS</div>
+            <div>Javascript</div>
+            <div>Wordpress</div>
+            <div>Figma</div>
+            <div>Adobe Photoshop</div>
+          </div>
+          <div class="skills-learning">
+            <h3>I currently learn:</h3>
+            <div>Figma</div>
+            <div>Adobe Illustrator</div>
+          </div>
+        </div>
       </section>
       <!-- projects -->
 
@@ -133,14 +161,29 @@
         </div>
       </section>
       <!-- contact -->
-      <section id="contact"></section>
-      <h2>Get in touch</h2>
-      <p>
-        Get In Touch I'm currently looking for new opportunities to learn and
-        contribute, so feel free to reach out to my email at
-        noelaostric@gmail.com or on LinkedIn and I'll do my best to get back to
-        you!
-      </p>
+      <section class="min-h-screen relative flex flex-col" id="contact">
+        <h2>Get in touch</h2>
+        <p>
+          I'm currently looking for new opportunities to learn and contribute,
+          so feel free to reach out.
+        </p>
+        <div
+          class="social flex flex-row justify-center items-center gap-20 py-6"
+        >
+          <a
+            class="hover:text-light-gray/50"
+            href="mailto:noela.ostric@gmail.com"
+            >E-mail</a
+          >
+
+          <a class="" href="https://www.linkedin.com/in/noela-ostric-036484245/"
+            ><i
+              class="fa-brands fa-linkedin-in hover:text-light-gray/50 scale-120"
+            ></i
+          ></a>
+        </div>
+        <div class="gradient-bottom"></div>
+      </section>
     </main>
     <footer></footer>
   </body>
