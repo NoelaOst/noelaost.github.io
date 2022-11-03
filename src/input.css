@@ -54,10 +54,10 @@ h6 {
 }
 
 h2 {
-  @apply text-3xl md:text-5xl my-2;
+  @apply text-4xl md:text-5xl my-3;
 }
 h3 {
-  @apply text-xl md:text-3xl;
+  @apply text-2xl md:text-3xl my-3;
 }
 
 .nav-list.active {
@@ -88,11 +88,11 @@ body.active {
   position: absolute;
   right: 5%;
   top: 25%;
-  height: 500px;
-  width: 500px;
-  background-image: conic-gradient(rgb(54, 40, 144), rgb(235, 196, 172) 450deg);
+  height: 400px;
+  width: 400px;
+  background-image: conic-gradient(rgb(53, 26, 231), rgb(235, 196, 172) 450deg);
   opacity: 0.25;
-  filter: blur(70px);
+  filter: blur(80px);
   border-radius: 0 60% 0 100%;
   z-index: -1;
 }
@@ -116,7 +116,7 @@ body.active {
   width: 300px;
   background-image: conic-gradient(rgb(53, 26, 231), rgb(235, 196, 172) 450deg);
   opacity: 0.4;
-  filter: blur(70px);
+  filter: blur(80px);
   border-radius: 0 60% 0 100%;
   z-index: -1;
 }
