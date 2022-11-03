@@ -13,13 +13,13 @@
     <script src="js/main.js" defer></script>
   </head>
   <body
-    class="overflow-x-hidden max-w-screen font-san text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
+    class="overflow-x-hidden min-w-screen font-sans text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
   >
     <!-- header -->
     <header>
       <nav class="main-nav flex flex-row justify-end md:justify-center py-6">
         <ul
-          class="nav-list z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
+          class="nav-list before:fixed before:inset-0 before:bg-transparent before:-z-10 md:before:hidden z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
         >
           <a href="#about">
             <li
@@ -35,20 +35,19 @@
               Projects
             </li></a
           >
-
+          <a href="#contact">
+            <li
+              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
+            >
+              Contact
+            </li></a
+          >
           <a href="#resume">
             <li
               class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
               id="resume"
             >
               Resume
-            </li></a
-          >
-          <a href="#contact">
-            <li
-              class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
-            >
-              Contact
             </li></a
           >
         </ul>
@@ -58,7 +57,7 @@
           <span class="line line3"></span>
         </div>
       </nav>
-      <div class="gradient-top"></div>
+      <div class="gradient-top animate-spin-slow"></div>
     </header>
     <!-- main -->
 
@@ -66,12 +65,12 @@
 
       <!-- home -->
       <section
-        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full"
+        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full py-6"
         id="home"
       >
         <div class="w-full">
-          <h1 class="text-5xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
-          <h2 class="text-2xl md:text-5xl text-left">
+          <h1 class="text-6xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
+          <h2 class="text-3xl text-left">
             I design and develop websites.
           </h2>
         </div>
@@ -92,11 +91,11 @@
           <h2>About</h2>
           <p class="text-white/50">
             Hi! My name is Noela and I am political science graduate who took a
-            <span class="text-white/80"> drastic career change</span> to <span class="text-white/80"> frontend development and UI/UX design </span> in
+            <span class="text-light-gray"> drastic career change</span> to <span class="text-light-gray"> frontend development and UI/UX design </span> in
             2022. I loaded up on online learning before enrolling to Algebra
             university program to learn additional skills that I couldn't learn
-            as a <span class="text-white/80"> self-taught designer/developer.</span> On my free time, you can catch
-            me working on new projects and learning more skillsets.
+            as a <span class="text-light-gray"> self-taught designer/developer.</span> On my free time, you can catch
+            me working on new projects and adding to my skillsets.
           </p>
         </div>
         <div class="skills flex flex-col justify-center w-full gap-6">
@@ -105,21 +104,32 @@
             <h3>
               Here are a few technologies I've been working with recently:
             </h3>
-            <div class="tech-stack-wrapper grid grid-cols-2 text-white/50 gap-2">
-                <div>HTML5 & CSS3</div>
-                <div>Tailwind CSS</div>
-                <div>Javascript</div>
-                <div>Wordpress</div>
-                <div>Figma</div>
-                <div>Adobe Photoshop</div>
-            </div>
-          </div>
-          <!-- new skills still learing -->
-          <div class="skills-learning">
-            <h3>I currently learn:</h3>
-            <div class="grid grid-cols-2 text-white/50">
-              <div>Figma</div>
-              <div>Adobe Illustrator</div>
+            <div class="tech-stack-wrapper grid grid-cols-3 text-white/50 gap-2 text-sm text-center place-items-center md:place-items-start">
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <span class="flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px">    <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.629,10.43h-8.93 l0.212,2.542h8.503l-0.638,7.51L15.003,22l-0.047-0.015l-4.72-1.505L9.978,17.42h2.312l0.101,1.189l2.637,0.581l2.591-0.582 l0.275-3.213h-8.09L9.178,8h11.659L20.629,10.43z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px">    <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.516,13.074l-0.446,7.285 l-5.038,1.647l-5.038-1.647l-0.191-3.484h2.55l0.064,1.584l2.615,0.887l2.615-0.887l0.191-2.85h-5.612l-0.127-2.534h5.867 l0.191-2.534H9.356L9.165,8.006h11.67L20.516,13.074z"/></svg></span>
+                  <p>HTML5 & CSS3</p></div>
+
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px"><path fill="#cccccc" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"/></svg>
+                  <p>Tailwind CSS</p></div>
+
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M15,20.38 c0,1.777-1.09,2.773-2.9,2.773c-1.788,0-2.927-1.045-2.927-2.735h1.937c0.005,0.627,0.379,1.023,0.957,1.023 c0.594,0,0.913-0.374,0.913-1.078v-5.365H15V20.38z M20.481,23.153c-2.009,0-3.273-0.946-3.307-2.476H19.1 c0.049,0.578,0.626,0.946,1.463,0.946c0.754,0,1.272-0.363,1.272-0.886c0-0.44-0.347-0.677-1.255-0.858l-1.045-0.209 c-1.453-0.275-2.201-1.067-2.201-2.316c0-1.552,1.244-2.57,3.158-2.57c1.86,0,3.147,1.007,3.18,2.476h-1.865 c-0.044-0.561-0.578-0.952-1.289-0.952c-0.709,0-1.176,0.336-1.176,0.864c0,0.435,0.352,0.688,1.188,0.853l1.022,0.198 c1.569,0.303,2.273,1.012,2.273,2.272C23.826,22.152,22.561,23.153,20.481,23.153z"/></svg>
+                  <p>Javascript</p> </div>
+
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M24.084,10.843 c0.003,0.096,0.018,0.178,0.018,0.278c0,1.043-0.196,2.217-0.783,3.687l-2.987,8.637c-0.634,0.402-1.315,0.732-2.034,0.984 l-3.116-8.531l-2.991,8.692c-0.64-0.188-1.253-0.437-1.833-0.742L5.747,11.221c0.271-0.661,0.609-1.286,1.008-1.868 c0.102,0.002,0.217,0.005,0.307,0.005c1.076,0,2.743-0.131,2.743-0.131c0.556-0.031,0.62,0.783,0.066,0.849 c0,0-0.558,0.065-1.178,0.098l3.748,11.151l2.252-6.757l-1.602-4.396c-0.556-0.031-1.08-0.096-1.08-0.096 c-0.556-0.033-0.489-0.882,0.065-0.849c0,0,1.7,0.131,2.71,0.131c1.076,0,2.743-0.131,2.743-0.131 c0.556-0.031,0.62,0.783,0.066,0.849c0,0-0.559,0.065-1.178,0.098l3.72,11.066l1.028-3.434c0.522-1.337,0.783-2.444,0.783-3.327 c0-1.272-0.456-2.153-0.849-2.838c-0.521-0.849-1.012-1.566-1.012-2.415c0-0.849,0.58-1.64,1.431-1.794 C22.602,8.368,23.48,9.529,24.084,10.843z"/></svg>
+                  <p>Wordpress</p> </div>
+
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px"><path d="M10 29L10 29c-2.209 0-4-1.791-4-4l0 0c0-2.209 1.791-4 4-4h2.857C13.488 21 14 21.512 14 22.143V25C14 27.209 12.209 29 10 29zM20 9h-2.857C16.512 9 16 8.488 16 7.857V2.143C16 1.512 16.512 1 17.143 1H20c2.209 0 4 1.791 4 4l0 0C24 7.209 22.209 9 20 9zM10 1h2.857C13.488 1 14 1.512 14 2.143v5.714C14 8.488 13.488 9 12.857 9H10C7.791 9 6 7.209 6 5l0 0C6 2.791 7.791 1 10 1zM10 11h2.857C13.488 11 14 11.512 14 12.143v5.714C14 18.488 13.488 19 12.857 19H10c-2.209 0-4-1.791-4-4l0 0C6 12.791 7.791 11 10 11zM20 11A4 4 0 1020 19 4 4 0 1020 11z"/></svg>
+                  <p>Figma</p></div>
+
+                <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" width="30px" height="30px">    <path d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 8 9.9921875 L 11.978516 9.9921875 C 13.947516 9.9921875 15.294922 11.339125 15.294922 13.328125 C 15.294922 15.283125 13.898344 16.623047 11.902344 16.623047 L 9.7636719 16.623047 L 9.7636719 19.857422 L 8 19.857422 L 8 9.9921875 z M 9.7636719 11.46875 L 9.7636719 15.160156 L 11.507812 15.160156 C 12.765813 15.160156 13.503906 14.504125 13.503906 13.328125 C 13.503906 12.119125 12.784672 11.46875 11.513672 11.46875 L 9.7636719 11.46875 z M 19.207031 12.226562 C 20.984031 12.226562 22.099656 13.013047 22.222656 14.373047 L 20.630859 14.373047 C 20.507859 13.847047 20.007844 13.511719 19.214844 13.511719 C 18.442844 13.511719 17.861328 13.881875 17.861328 14.421875 C 17.861328 14.845875 18.21675 15.105391 18.96875 15.275391 L 20.287109 15.576172 C 21.716109 15.897172 22.378906 16.513281 22.378906 17.613281 C 22.378906 19.050281 21.059359 20.007813 19.193359 20.007812 C 17.327359 20.007812 16.151484 19.199844 16.021484 17.839844 L 17.697266 17.839844 C 17.861266 18.393844 18.386375 18.722656 19.234375 18.722656 C 20.088375 18.722656 20.683594 18.346969 20.683594 17.792969 C 20.683594 17.368969 20.363344 17.101359 19.652344 16.943359 L 18.326172 16.636719 C 16.890172 16.308719 16.214844 15.645578 16.214844 14.517578 C 16.214844 13.163578 17.443031 12.226562 19.207031 12.226562 z"/></svg>
+                  <p>Adobe Photoshop</p> </div>
             </div>
           </div>
         </div>
@@ -127,30 +137,30 @@
 
       <!-- projects -->
 
-      <section class="min-h-screen" id="projects">
-        <h2>Coding</h2>
-        <div class="projects-wrapper flex flex-col md:flex-row gap-6 md:gap-16 justify-center items-center">
-          <a href="https://www.gipsy-decor.com/"><img src="" alt="" />Gipsy-decor.com</a>
-          <a href="https://noelaost.github.io/Manage-Landing-Page/"
-            ><img src="" alt=""
+      <section class="min-h-screen py-6" id="projects">
+        <h2>Coding Projects</h2>
+        <div class="projects-wrapper grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-20 place-items-center text-white/50 min-h-max min-w-max py-4 md:py-12">
+          <a class="hover:text-light-gray" href="https://www.gipsy-decor.com/"><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/gipsy-decor-screenshot-header.png" alt="gipsy-decor-screenshot" />Gipsy-decor.com</a>
+          <a class="hover:text-light-gray" href="https://noelaost.github.io/Manage-Landing-Page/"
+            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0"  src="images/Manage-Landing-Page-screenshot-header.png" alt="Manage-Landing-Page-screenshot"
           />Manage Landing Page</a>
-          <a href="https://noelaost.github.io/Sunnyside-agency-landing-page/"
-            ><img src="" alt=""
-          />Sunnyside Agency Landing Page</a>
-          <a href="https://noelaost.github.io/Base-apparel-coming-soon-master/"
-            ><img src="" alt=""
+          <a class="hover:text-light-gray" href="https://noelaost.github.io/Sunnyside-agency-landing-page/"
+            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/Sunnyside-agency-landing-page-screenshot-header.png" alt="Sunnyside-agency-landing-page-screenshot"
+          />Sunnyside Agency</a>
+          <a class="hover:text-light-gray" href="https://noelaost.github.io/Base-apparel-coming-soon-master/"
+            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/Base-apparel-screenshot.png" alt="Base-apparel-screenshot"
           />Base Apparel Hero</a>
         </div>
-        <h2>Designing & Prototyping</h2>
+        <!-- <h2>Designing & Prototyping Projects</h2>
         <div>
           <a href=""><img src="" alt="" /></a>
           <a href=""><img src="" alt="" /></a>
           <a href=""><img src="" alt="" /></a>
           <a href=""><img src="" alt="" /></a>
-        </div>
+        </div> -->
         <div>
-          <p>Or visit my Github or Behance accounts below</p>
-          <ul class="flex flex-col gap-4">
+          <p class="my-6 text-center">Or visit my Github or Behance accounts below</p>
+          <ul class="flex flex-col justify-center items-center gap-4">
             <li>
               <a href=""><i class="fa-brands fa-github hover:scale-110"></i></a>
             </li>
@@ -162,36 +172,36 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="min-h-screen relative flex flex-col" id="contact">
+      <section class="min-h-50 relative flex flex-col py-6" id="contact">
         <h2>Get in touch</h2>
         <p>
           I'm currently looking for new opportunities to learn and contribute,
           so feel free to reach out.
         </p>
         <div
-          class="social flex flex-col justify-center items-center gap-6 py-6 text-light-gray/60"
+          class="social flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-6 md:gap-16 py-6 text-light-gray/60"
         >
           <a
             class="min-w-max hover:text-light-gray active:text-light-gray"
             href="mailto:noela.ostric@gmail.com"
-            ><i class="fa-regular fa-envelope scale-120"></i> E-mail</a
+            ><i class="fa-regular fa-envelope scale-120 text-light-gray"></i> E-mail</a
           >
 
           <a class="min-w-max hover:text-light-gray active:text-light-gray" href="https://www.linkedin.com/in/noela-ostric-036484245/"
             ><i
-              class="fa-brands fa-linkedin-in scale-120"
+              class="fa-brands fa-linkedin-in scale-120 text-light-gray"
             ></i
           > Linkedin</a>
 
           <a class="min-w-max hover:text-light-gray active:text-light-gray" href="tel:+385955873879"
             ><i
-              class="fa-brands fa-whatsapp scale-120"
+              class="fa-brands fa-whatsapp scale-120 text-light-gray"
             ></i
           > Whatsapp</a>
         </div>
         <div class="gradient-bottom"></div>
+        <a href="#" class="to-top-btn hidden"><i class="fa-solid fa-chevron-up"></i></a>
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>

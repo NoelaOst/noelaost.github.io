@@ -18,11 +18,18 @@ module.exports = {
       },
       spacing: {
         '9px': '9px',
+        '22': '5.5rem',
       },
       rotate: {
         '20': '20deg',
         '30': '30deg',
         '35': '35deg',
+      },
+      maxHeight: {
+        '50': '50vh',
+      },
+      animation: {
+        'spin-slow': 'spin 60s linear infinite',
       },
     },
   },

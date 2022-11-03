@@ -54,14 +54,14 @@ h6 {
 }
 
 h2 {
-  @apply text-4xl md:text-5xl my-3;
+  @apply text-4xl md:text-5xl my-4;
 }
 h3 {
-  @apply text-2xl md:text-3xl my-3;
+  @apply text-2xl md:text-3xl my-4;
 }
 
 .nav-list.active {
-  @apply flex flex-col justify-between items-center gap-6 fixed bg-white/5 backdrop-blur-xl inset-x-0 top-0 py-12 border-black md:static md:flex md:flex-row md:gap-6 md:justify-center md:items-center md:bg-transparent md:text-light-gray md:py-0;
+  @apply flex flex-col justify-between items-center gap-6 bg-white/5 backdrop-blur-xl fixed inset-x-0 top-0 py-12 border-b border-white/50 md:static md:flex md:flex-row md:gap-6 md:justify-center md:items-center md:bg-transparent md:text-light-gray md:py-0;
 }
 
 /* hamburger */
@@ -84,34 +84,24 @@ body.active {
   @apply h-full overflow-y-hidden md:overflow-auto;
 }
 
+/* background gradients  */
 .gradient-top {
   position: absolute;
   right: 5%;
   top: 25%;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   background-image: conic-gradient(rgb(53, 26, 231), rgb(235, 196, 172) 450deg);
   opacity: 0.25;
   filter: blur(80px);
   border-radius: 0 60% 0 100%;
   z-index: -1;
 }
-/* .gradient-top {
-  position: absolute;
-  right: 5%;
-  top: 25%;
-  height: 500px;
-  width: 500px;
-  background-image: conic-gradient(rgb(53, 26, 231), rgb(251, 125, 47) 450deg);
-  opacity: 0.4;
-  filter: blur(70px);
-  border-radius: 0 60% 0 100%;
-  z-index: -1; }*/
 
 .gradient-bottom {
   position: absolute;
-  bottom: 15%;
-  left: 10%;
+  bottom: 25%;
+  left: 1%;
   height: 300px;
   width: 300px;
   background-image: conic-gradient(rgb(53, 26, 231), rgb(235, 196, 172) 450deg);
@@ -119,4 +109,10 @@ body.active {
   filter: blur(80px);
   border-radius: 0 60% 0 100%;
   z-index: -1;
+  rotate: 110deg;
+}
+
+/* scroll to top button */
+.to-top-btn.active {
+  @apply static fixed bottom-0.5 right-0.5 w-20 h-20 flex justify-center items-center;
 }
