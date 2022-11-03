@@ -1,7 +1,6 @@
 const mainNav = document.querySelector(".main-nav");
 const navList = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
-const body = document.querySelector("body");
 const navListLink = document.querySelectorAll(".nav-list-link");
 const toTopBtn = document.querySelector(".to-top-btn");
 
@@ -9,7 +8,6 @@ const toTopBtn = document.querySelector(".to-top-btn");
 hamburger.addEventListener("click", () => {
     navList.classList.toggle("active");
     hamburger.classList.toggle("active");
-    body.classList.toggle("active");
 
 });
 
@@ -17,7 +15,6 @@ navListLink.forEach(link => {
     link.addEventListener("click", () => {
         navList.classList.remove("active");
         hamburger.classList.remove("active");
-        body.classList.remove("active");
     });
 });
 // ¨scroll to top button 

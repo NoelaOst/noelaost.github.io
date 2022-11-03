@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth w-full m-0 p-0" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +13,13 @@
     <script src="js/main.js" defer></script>
   </head>
   <body
-    class="overflow-x-hidden min-w-screen font-sans text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
+    class="overflow-x-hidden text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
   >
     <!-- header -->
     <header>
       <nav class="main-nav flex flex-row justify-end md:justify-center py-6">
         <ul
-          class="nav-list before:fixed before:inset-0 before:bg-transparent before:-z-10 md:before:hidden z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
+          class="nav-list z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
         >
           <a href="#about">
             <li
@@ -57,7 +57,7 @@
           <span class="line line3"></span>
         </div>
       </nav>
-      <div class="gradient-top animate-spin-slow"></div>
+      <div class="gradient-top"></div>
     </header>
     <!-- main -->
 
@@ -69,7 +69,7 @@
         id="home"
       >
         <div class="w-full">
-          <h1 class="text-6xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
+          <h1 class="text-5xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
           <h2 class="text-3xl text-left">
             I design and develop websites.
           </h2>
@@ -84,7 +84,7 @@
       </section>
       <!-- about -->
       <section
-        class="min-h-screen flex flex-col md:flex-row justify-center items-center basis-full gap-6"
+        class="flex flex-col md:flex-row justify-center items-center basis-full gap-6 py-10 md:py-20"
         id="about"
       >
         <div class="about-author w-full">
@@ -104,7 +104,7 @@
             <h3>
               Here are a few technologies I've been working with recently:
             </h3>
-            <div class="tech-stack-wrapper grid grid-cols-3 text-white/50 gap-2 text-sm text-center place-items-center md:place-items-start">
+            <div class="tech-stack-wrapper grid grid-cols-2 sm:grid-cols-3 text-white/50 gap-2 text-sm text-center place-items-center md:place-items-start">
                 <div class="flex flex-col justify-center items-center w-24 h-28 rounded-md bg-white/5 backdrop-blur-lg border border-light-gray/40 hover:border-light-gray hover:text-light-gray">
                   <span class="flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#cccccc" viewBox="0 0 30 30" width="30px" height="30px">    <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.629,10.43h-8.93 l0.212,2.542h8.503l-0.638,7.51L15.003,22l-0.047-0.015l-4.72-1.505L9.978,17.42h2.312l0.101,1.189l2.637,0.581l2.591-0.582 l0.275-3.213h-8.09L9.178,8h11.659L20.629,10.43z"/></svg>
@@ -137,9 +137,9 @@
 
       <!-- projects -->
 
-      <section class="min-h-screen py-6" id="projects">
-        <h2>Coding Projects</h2>
-        <div class="projects-wrapper grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-20 place-items-center text-white/50 min-h-max min-w-max py-4 md:py-12">
+      <section class="py-10 md:py-20" id="projects">
+        <h2 class="text-center">Coding Projects</h2>
+        <div class="projects-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-20 place-items-center text-white/50 min-h-max min-w-max py-4 md:py-12">
           <a class="hover:text-light-gray" href="https://www.gipsy-decor.com/"><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/gipsy-decor-screenshot-header.png" alt="gipsy-decor-screenshot" />Gipsy-decor.com</a>
           <a class="hover:text-light-gray" href="https://noelaost.github.io/Manage-Landing-Page/"
             ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0"  src="images/Manage-Landing-Page-screenshot-header.png" alt="Manage-Landing-Page-screenshot"
@@ -159,10 +159,10 @@
           <a href=""><img src="" alt="" /></a>
         </div> -->
         <div>
-          <p class="my-6 text-center">Or visit my Github or Behance accounts below</p>
+          <p class="my-6 text-center">Check out my Github account below:</p>
           <ul class="flex flex-col justify-center items-center gap-4">
             <li>
-              <a href=""><i class="fa-brands fa-github hover:scale-110"></i></a>
+              <a href=""><i class="fa-brands fa-github scale-110 hover:scale-150"></i></a>
             </li>
             <!-- <li>
               <a href=""><i class="fa-brands fa-behance hover:scale-110"></i></a>
@@ -172,14 +172,14 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="min-h-50 relative flex flex-col py-6" id="contact">
-        <h2>Get in touch</h2>
-        <p>
+      <section class="min-h-50 relative flex flex-col py-10 md:py-20" id="contact">
+        <h2 class="text-center">Get in touch</h2>
+        <p class="text-center">
           I'm currently looking for new opportunities to learn and contribute,
           so feel free to reach out.
         </p>
         <div
-          class="social flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-6 md:gap-16 py-6 text-light-gray/60"
+          class="social flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 py-6 text-light-gray/60"
         >
           <a
             class="min-w-max hover:text-light-gray active:text-light-gray"

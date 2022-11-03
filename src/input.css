@@ -80,9 +80,6 @@ h3 {
 .hamburger.active {
   @apply fixed;
 }
-body.active {
-  @apply h-full overflow-y-hidden md:overflow-auto;
-}
 
 /* background gradients  */
 .gradient-top {
