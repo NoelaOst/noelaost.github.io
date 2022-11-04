@@ -804,31 +804,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -839,16 +822,12 @@ video {
   text-align: center;
 }
 
-.font-sans {
-  font-family: 'Montserrat', serif;
-}
-
 .font-serif {
   font-family: 'Ogg', sans-serif;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -860,11 +839,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-light-gray {
@@ -947,7 +921,7 @@ h3 {
   justify-content: space-between;
   gap: 1.5rem;
   border-bottom-width: 1px;
-  border-color: rgb(255 255 255 / 0.5);
+  border-color: rgb(204 204 204 / 0.2);
   background-color: rgb(255 255 255 / 0.05);
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1039,26 +1013,23 @@ h3 {
 /* scroll to top button */
 
 .to-top-btn.active {
-  position: static;
   position: fixed;
-  bottom: 0.125rem;
-  right: 0.125rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
   display: flex;
-  height: 5rem;
-  width: 5rem;
   align-items: center;
   justify-content: center;
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1102,6 +1073,11 @@ h3 {
     margin-right: 5rem;
   }
 
+  .md\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1122,16 +1098,8 @@ h3 {
     place-items: start;
   }
 
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
   }
 
   .md\:justify-center {
@@ -1150,23 +1118,14 @@ h3 {
     background-color: transparent;
   }
 
-  .md\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 
-  .md\:pb-32 {
-    padding-bottom: 8rem;
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:text-left {
@@ -1190,10 +1149,6 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:gap-20 {
     gap: 5rem;
   }

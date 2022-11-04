@@ -61,7 +61,7 @@ h3 {
 }
 
 .nav-list.active {
-  @apply flex flex-col justify-between items-center gap-6 bg-white/5 backdrop-blur-xl fixed inset-x-0 top-0 py-12 border-b border-white/50 md:static md:flex md:flex-row md:gap-6 md:justify-center md:items-center md:bg-transparent md:text-light-gray md:py-0;
+  @apply flex flex-col justify-between items-center gap-6 bg-white/5 backdrop-blur-xl fixed inset-x-0 top-0 py-12 border-b border-light-gray/20 md:static md:flex md:flex-row md:gap-6 md:justify-center md:items-center md:bg-transparent md:text-light-gray md:py-0;
 }
 
 /* hamburger */
@@ -111,5 +111,5 @@ h3 {
 
 /* scroll to top button */
 .to-top-btn.active {
-  @apply static fixed bottom-0.5 right-0.5 w-20 h-20 flex justify-center items-center;
+  @apply fixed bottom-10 right-10 flex justify-center items-center;
 }
