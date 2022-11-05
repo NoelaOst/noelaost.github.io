@@ -13,10 +13,10 @@
     <script src="js/main.js" defer></script>
   </head>
   <body
-    class="!overflow-x-hidden max-w-screen text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
+    class="!overflow-x-hidden min-w-screen text-light-gray text-center md:text-left bg-dark-gray mx-6 md:mx-20"
   >
     <!-- header -->
-    <header>
+    <header class="w-full">
       <nav class="main-nav flex flex-row justify-end md:justify-center py-6">
         <ul
           class="nav-list before:fixed before:inset-0 before:bg-transparent before:-z-10 md:before:hidden z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
@@ -42,7 +42,7 @@
               Contact
             </li></a
           >
-          <a href="#resume">
+          <a href="./Noela-Ostric-tech-resume.pdf" download>
             <li
               class="nav-list-link active:underline decoration-1 underline-offset-4 md:hover:text-white"
               id="resume"
@@ -65,12 +65,12 @@
 
       <!-- home -->
       <section
-        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full"
+        class="min-h-screen w-full font-serif flex flex-col md:flex-row justify-center items-center basis-full"
         id="home"
       >
         <div class="w-full">
-          <h1 class="text-5xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
-          <h2 class="text-3xl text-left">
+          <h1 class="whitespace-normal text-4xl md:text-7xl text-left">Hi, I'm Noela Oštrić.</h1>
+          <h2 class="whitespace-normal text-2xl text-left">
             I design and develop websites.
           </h2>
         </div>
@@ -91,7 +91,7 @@
           <h2>About</h2>
           <p class="text-white/50">
             Hi! My name is Noela and I am political science graduate who took a
-            <span class="text-light-gray"> drastic career change</span> to <span class="text-light-gray"> frontend development and UI/UX design </span> in
+            <span class="text-light-gray"> drastic career change</span> to <span class="text-light-gray"> frontend development and web design </span> in
             2022. <br> I loaded up on online learning before enrolling to Algebra
             university program to learn additional skills that I couldn't learn
             as a <span class="text-light-gray"> self-taught designer/developer.</span> On my free time, you can catch
@@ -137,9 +137,9 @@
 
       <!-- projects -->
 
-      <section class="py-10 md:py-24 pb-10" id="projects">
+      <section class="py-10 md:py-24 pb-10 max-w-screen" id="projects">
         <h2 class="text-center">Projects</h2>
-        <div class="projects-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-20 place-items-center justify-center text-white/50 min-h-max w-full py-4 md:py-12">
+        <div class="projects-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-20 place-items-center justify-center text-white/50 min-h-max max-w-screen py-4 md:py-12">
           <a class="hover:text-light-gray" href="https://www.gipsy-decor.com/"><img class="w-36 h-20 md:w-48 md:h-24 grayscale hover:grayscale-0 active:grayscale-0" src="images/gipsy-decor-screenshot-header.png" alt="gipsy-decor-screenshot" />Gipsy-decor.com</a>
           <a class="hover:text-light-gray" href="https://noelaost.github.io/Manage-Landing-Page/"
             ><img class="w-36 h-20 md:w-48 md:h-24 object-fit grayscale hover:grayscale-0 active:grayscale-0"  src="images/Manage-Landing-Page-screenshot-header.png" alt="Manage-Landing-Page-screenshot"
@@ -179,7 +179,7 @@
           <br>
           <ul class="text-light-gray">
             <li>Passionate for user experience, technology and design</li>
-            <li>Commited to continuous learning and improvement</li>
+            <li>Committed to continuous learning and improvement</li>
           </ul>
           <br>
           <p> Feel free to <span class="text-light-gray">reach out.</span></p>
