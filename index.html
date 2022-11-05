@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth w-full m-0 p-0" lang="en">
+<html class="scroll-smooth m-0 p-0" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +13,13 @@
     <script src="js/main.js" defer></script>
   </head>
   <body
-    class="overflow-x-hidden text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
+    class="!overflow-x-hidden max-w-screen text-light-gray text-center md:text-left bg-dark-gray mx-10 md:mx-20"
   >
     <!-- header -->
     <header>
       <nav class="main-nav flex flex-row justify-end md:justify-center py-6">
         <ul
-          class="nav-list z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
+          class="nav-list before:fixed before:inset-0 before:bg-transparent before:-z-10 md:before:hidden z-10 hidden md:static md:flex md:flex-row md:gap-12 md:justify-center md:items-center md:bg-transparent md:text-light-gray"
         >
           <a href="#about">
             <li
@@ -65,7 +65,7 @@
 
       <!-- home -->
       <section
-        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full py-6"
+        class="min-h-screen font-serif flex flex-col md:flex-row justify-center items-center basis-full"
         id="home"
       >
         <div class="w-full">
@@ -84,7 +84,7 @@
       </section>
       <!-- about -->
       <section
-        class="flex flex-col md:flex-row justify-center items-center basis-full gap-6 py-10 md:py-20"
+        class="flex flex-col md:flex-row justify-center items-center basis-full gap-6 py-10 md:py-24 pb-10"
         id="about"
       >
         <div class="about-author w-full">
@@ -92,7 +92,7 @@
           <p class="text-white/50">
             Hi! My name is Noela and I am political science graduate who took a
             <span class="text-light-gray"> drastic career change</span> to <span class="text-light-gray"> frontend development and UI/UX design </span> in
-            2022. I loaded up on online learning before enrolling to Algebra
+            2022. <br> I loaded up on online learning before enrolling to Algebra
             university program to learn additional skills that I couldn't learn
             as a <span class="text-light-gray"> self-taught designer/developer.</span> On my free time, you can catch
             me working on new projects and adding to my skillsets.
@@ -137,18 +137,18 @@
 
       <!-- projects -->
 
-      <section class="py-10 md:py-20" id="projects">
+      <section class="py-10 md:py-24 pb-10" id="projects">
         <h2 class="text-center">Projects</h2>
-        <div class="projects-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-20 place-items-center text-white/50 min-h-max min-w-max py-4 md:py-12">
-          <a class="hover:text-light-gray" href="https://www.gipsy-decor.com/"><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/gipsy-decor-screenshot-header.png" alt="gipsy-decor-screenshot" />Gipsy-decor.com</a>
+        <div class="projects-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-20 place-items-center justify-center text-white/50 min-h-max w-full py-4 md:py-12">
+          <a class="hover:text-light-gray" href="https://www.gipsy-decor.com/"><img class="w-36 h-20 md:w-48 md:h-24 grayscale hover:grayscale-0 active:grayscale-0" src="images/gipsy-decor-screenshot-header.png" alt="gipsy-decor-screenshot" />Gipsy-decor.com</a>
           <a class="hover:text-light-gray" href="https://noelaost.github.io/Manage-Landing-Page/"
-            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0"  src="images/Manage-Landing-Page-screenshot-header.png" alt="Manage-Landing-Page-screenshot"
-          />Manage Landing Page</a>
+            ><img class="w-36 h-20 md:w-48 md:h-24 object-fit grayscale hover:grayscale-0 active:grayscale-0"  src="images/Manage-Landing-Page-screenshot-header.png" alt="Manage-Landing-Page-screenshot"
+          />Manage</a>
           <a class="hover:text-light-gray" href="https://noelaost.github.io/Sunnyside-agency-landing-page/"
-            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/Sunnyside-agency-landing-page-screenshot-header.png" alt="Sunnyside-agency-landing-page-screenshot"
+            ><img class="w-36 h-20 md:w-48 md:h-24 object-fit grayscale hover:grayscale-0 active:grayscale-0" src="images/Sunnyside-agency-landing-page-screenshot-header.png" alt="Sunnyside-agency-landing-page-screenshot"
           />Sunnyside Agency</a>
           <a class="hover:text-light-gray" href="https://noelaost.github.io/Base-apparel-coming-soon-master/"
-            ><img class="w-48 h-24 object-fit grayscale hover:grayscale-0" src="images/Base-apparel-screenshot.png" alt="Base-apparel-screenshot"
+            ><img class="w-36 h-20 md:w-48 md:h-24 object-fit grayscale hover:grayscale-0 active:grayscale-0" src="images/Base-apparel-screenshot.png" alt="Base-apparel-screenshot"
           />Base Apparel Hero</a>
         </div>
         <!-- <h2>Designing & Prototyping Projects</h2>
@@ -159,10 +159,10 @@
           <a href=""><img src="" alt="" /></a>
         </div> -->
         <div>
-          <p class="my-6 text-center">Check out my Github account below:</p>
+          <p class="my-6 text-lg text-center text-white/50">Check out my Github account below:</p>
           <ul class="flex flex-col justify-center items-center gap-4">
             <li>
-              <a href=""><i class="fa-brands fa-github scale-110 hover:scale-150"></i></a>
+              <a href=""><i class="fa-brands fa-github scale-110 hover:scale-150 duration-200"></i></a>
             </li>
             <!-- <li>
               <a href=""><i class="fa-brands fa-behance hover:scale-110"></i></a>
@@ -172,35 +172,41 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="min-h-50 relative flex flex-col py-10 md:py-20 relative" id="contact">
+      <section class="min-h-50 relative flex flex-col py-10 md:py-24 relative" id="contact">
         <h2 class="text-center">Get in touch</h2>
-        <p class="text-center text-white/50 md:mx-16">
-          I'm currently looking for <span class="text-light-gray">new opportunities</span> to learn and contribute, so if you're looking for somebody who is <span class="text-light-gray">passionate</span> for user experience, technology and design
-           and <span class="text-light-gray">commited</span> to continuous learning  and improvement,</p>
-          <p class="text-center text-white/50"> feel free to <span class="text-light-gray">reach out.</span></p>
+        <div class="contact-text-wrapper text-center text-white/50 md:mx-16">
+          <p>I'm currently looking for <span class="text-light-gray">new opportunities</span> to learn and contribute, so if you're searching for somebody who is: </p>
+          <br>
+          <ul class="text-light-gray">
+            <li>Passionate for user experience, technology and design</li>
+            <li>Commited to continuous learning and improvement</li>
+          </ul>
+          <br>
+          <p> Feel free to <span class="text-light-gray">reach out.</span></p>
+        </div>
         <div
           class="social flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 py-6 text-light-gray/60"
         >
           <a
-            class="min-w-max hover:text-light-gray active:text-light-gray"
+            class="min-w-max md:hover:text-light-gray active:text-light-gray"
             href="mailto:noela.ostric@gmail.com"
             ><i class="fa-regular fa-envelope scale-120 text-light-gray"></i> E-mail</a
           >
 
-          <a class="min-w-max hover:text-light-gray active:text-light-gray" href="https://www.linkedin.com/in/noela-ostric-036484245/"
+          <a class="min-w-max md:hover:text-light-gray active:text-light-gray" href="https://www.linkedin.com/in/noela-ostric-036484245/"
             ><i
               class="fa-brands fa-linkedin-in scale-120 text-light-gray"
             ></i
           > Linkedin</a>
 
-          <a class="min-w-max hover:text-light-gray active:text-light-gray" href="tel:+385955873879"
+          <a class="min-w-max md:hover:text-light-gray active:text-light-gray" href="tel:+385955873879"
             ><i
               class="fa-brands fa-whatsapp scale-120 text-light-gray"
             ></i
           > Whatsapp</a>
         </div>
         <div class="gradient-bottom"></div>
-        <a href="#" class="to-top-btn hidden"><i class="fa-solid fa-chevron-up"></i></a>
+        <a href="#" class="to-top-btn hidden absolute"><i class="fa-solid fa-chevron-up"></i></a>
       </section>
     </main>
   </body>
